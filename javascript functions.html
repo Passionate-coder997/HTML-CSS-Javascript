@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+    <script type="text/javascript">
+    function myfunc(){
+        document.getElementById("demo").innerHTML=Math.random();
+    }
+    function minmax(){
+        document.getElementById("min").innerHTML="The Lowest number is "+Math.min(4,55,2,44,1,66,100)
+    }
+    function maxmin(){
+        document.getElementById("max").innerHTML="The Highest number is "+Math.max(4,55,2,44,1,66,100);
+    }
+    function r(){
+        document.getElementById("er").innerHTML="This is Round Function "+Math.round(11.4);
+        document.getElementById("ero").innerHTML="This is Round Function "+Math.round(12.6);
+    }
+    function f(){
+        document.getElementById("ef").innerHTML="This is Floor Function "+Math.floor(11.4);
+    }
+    function c(){
+        document.getElementById("ec").innerHTML="This is Ceil Function "+Math.ceil(11.4);
+    }
+    </script>
+</head>
+<body>
+<p id="demo" onclick="myfunc()">This is random function in Javascript which selects number between 0 and 1</p>
+<p id="min" onclick="minmax()">[4,55,2,44,1,66,100]</p>
+<p id="max" onclick="maxmin()">[4,55,2,44,1,66,100]</p>
+<p id="er" onclick="r()">Round Function</p>
+<p id="ero" onclick="r()">Round Function with value 12.6</p>
+<p id="ef" onclick="f()"> Function</p>
+<p id="ec" onclick="c()">Ceil Function</p>
+</body>
+</html>

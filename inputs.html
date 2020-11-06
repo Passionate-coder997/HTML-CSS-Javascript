@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Giving Inputs</title>
+<script type="text/javascript">
+function changetext(document){
+	document.getElementById("heading").innerHTML=11+9;
+}
+function docwrite(document){
+	//document.write(7+2);
+	document.getElementById("para").innerHTML=10;
+}
+</script>
+</head>
+<body>
+<H1 id="heading" onclick="changetext(document)">This is heading</H1>
+<p id="para">This is Paragraph and 2 + 7 <input type="button" value="is" onclick="docwrite(document)"></input> </p>
+</body>
+</html>

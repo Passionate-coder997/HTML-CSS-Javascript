@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text animations</title>
+    <style>
+        h1{
+            position: relative;
+            animation-name: heading;
+            animation-duration: 4s;
+            animation-iteration-count:6;
+            animation-fill-mode:forwards;
+            animation-direction: alternate;
+        }
+        @keyframes heading{
+            0% {color: white; left:0px;}
+            25% {color: yellow; left:1050px;}
+            50% {color: blue; left:1050px;}
+            75% {color: #2DF904;}
+            100% {color: #717571; left:0px;}
+}
+    </style>
+</head>
+<body>
+<h1>Hi, Jay Thakker here</h1>
+</body>
+</html>

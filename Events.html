@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Events</title>
+</head>
+<body>
+<center>
+    <p id="create"></p>
+    <button onclick="docreate()">The date and time when its created</button>
+    <br><br><button onmouseout="docreate()">Mouse Out</button>
+    <br><br><button onmouseover="docreate()">Mouse Over</button>
+</center>
+<script type="text/javascript">
+    function docreate(){
+        document.getElementById("create").innerHTML = Date();
+    }
+    var hexbg=['#FF5733','#F3FF33','#9CFF33','#33FFFF','#3358FF','#33FF3C','#FA001A','#FFFFFF']
+    document.body.style.background=hexbg[Math.floor(Math.random() * hexbg.length)]
+</script>
+</body>
+</html>

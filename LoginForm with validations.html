@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Login!!</title>
+    <style>
+        tr,td{
+            padding:15px;
+            border-collapse:collapse;
+        }
+        button{
+            margin-left:230px;
+            padding:5px;
+            position:relative;
+            transition-duration:2s;
+        }
+    </style>
+    <script type="text/javascript">
+        function signin(){
+            var name=document.login.user.value;
+            var password=document.login.pwd.value;
+            var pin=document.login.pin.value;
+            if (name==null || name=="")
+            {
+                alert("Username can't be empty")
+            }
+            else if (password.length<8)
+            {
+                alert("Please enter a valid password")
+            }
+            else if (pin==null || pin=="")
+            {
+                alert("Enter a valid pin")
+            }
+            else
+            {
+                alert("You Successfully Logged in")
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#501BCB">
+    <center>
+    <br><br><br><br><br><br><br>
+    <form name="login" method="post" width="50%">
+        <table bgcolor="blue" align="center">
+            <tr align="center">
+                <td><b>Username:</b></td>&nbsp;&nbsp;
+                <td>
+                    <input type="text" name="user">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Password:</b></td>&nbsp;&nbsp;
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td><b>Pin:</b></td>&nbsp;&nbsp;
+                <td><input type="number" name="pin"></td>
+            </tr>
+
+        </table>
+    </form>
+        <br>
+        <div class="log">
+        <button type="submit" value="Login" onmouseover="signin()"><b>Login</b></button>
+        </div>
+    </center>
+
+</body>
+</html>

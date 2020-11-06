@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arrays in Javascript</title>
+</head>
+<body>
+<center>
+    <p>Array also supports Indexing</p>
+<ol>
+    &nbsp;&nbsp;&nbsp;<li id="ti"></li>
+    &nbsp;&nbsp;&nbsp;<li id="sp"></li>
+    &nbsp;&nbsp;&nbsp;<li id="jo" onclick="j()">Using Join Method</li>
+    &nbsp;&nbsp;&nbsp;<li id="m" onclick="p()">Pop Method removes last element of array</li>
+    &nbsp;&nbsp;&nbsp;<li id="e" onclick="s()">Shift Method removes first element of array</li>
+    &nbsp;&nbsp;&nbsp;<li id="t" onclick="pu()">Push Method appends a element to array</li>
+    &nbsp;&nbsp;&nbsp;<li id="h" onclick="un()">Unshift Method adds an element in the begining of array</li>
+    &nbsp;&nbsp;&nbsp;<li id="o" onclick="cdel()">Using delete command to delete an item in array</li>
+    &nbsp;&nbsp;&nbsp;<li id="d" onclick="mi()">Splice Method adds multiple items at specific index in array</li>
+    &nbsp;&nbsp;&nbsp;<li id="s" onclick="sortarray()">Sorts array alphabetically</li>
+    &nbsp;&nbsp;&nbsp;<li id="rs" onclick="revsort()">Reversing an array</li>
+    &nbsp;&nbsp;&nbsp;<li id="aj" onclick="addingarray()">Using Concat Method</li>
+</ol>
+</center>
+<script type="text/javascript">
+var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+document.getElementById("ti").innerHTML = food.toString();
+document.getElementById("sp").innerHTML = food[3];
+function j(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    document.getElementById("jo").innerHTML= food.join(" - ")
+}
+function p(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    food.pop();
+    document.getElementById("m").innerHTML = food;
+}
+function s(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    food.shift();
+    document.getElementById("e").innerHTML = food;
+}
+function pu(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    food.push('Animals');
+    document.getElementById("t").innerHTML = food;
+}
+function un(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    food.unshift('An'+1+'mals');
+    document.getElementById("h").innerHTML = food;
+}
+function cdel(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    delete food[3]
+    document.getElementById("o").innerHTML = food;
+}
+function mi(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"];
+    food.splice(3,0,'Banana','Orange');
+    document.getElementById("d").innerHTML = food;
+}
+function sortarray(){
+    var food = ["q","w","e","r","t","y","p","o","i","u","y","a","s","d","f","g","l","k","j","h","z","x","c","v","m","n","b"];
+    food.sort();
+    document.getElementById("s").innerHTML = food;
+}
+function revsort(){
+    var food = ["Fruits","Apple","Vegetables","Grains","Pulses","Stepples"]
+    food.reverse();
+    document.getElementById("rs").innerHTML = food;
+}
+function addingarray(){
+    var a=[1,2,3,4,5,6,7,8,9,10];
+    var b=[11,22,33,44,55,66,77,88,99];
+    var c=a.concat(b)
+    document.getElementById("aj").innerHTML = c;
+}
+</script>
+</body>
+</html>

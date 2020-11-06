@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animation with CSS</title>
+<style>
+body{
+	background: #333;
+}
+.box{
+	background: red;
+	width:200px;
+	height:200px;
+	position: relative;
+	animation-name:try;
+	animation-duration:10s;
+    animation-direction: alternate
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    animation-timing-function:ease-out;
+}
+@keyframes try{
+    0% {background: white; left:0px; top:0px; border-radius:0 0 0 0;}/*white*/
+    25% {background: yellow; left:1050px; top:0px; border-radius:50% 0 0 0;}/*yellow*/
+    50% {background: blue; left:1050px; top:500px; border-radius:50% 50% 0 0}/*blue*/
+    75% {background: #2DF904; left:0px; top:500px; border-radius:50% 50% 50% 0}/*green*/
+    100% {background: #717571; left:0px; top:0px; border-radius:0 0 0 0}/*grey*/
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
